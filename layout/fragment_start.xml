@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.StartFragment"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#000"
+    android:weightSum="9"
+    android:id="@+id/main"
+    android:padding="10dp">
+   <View
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:layout_weight="2"></View>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+      <ImageView
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:src="@drawable/x"
+          android:layout_marginLeft="25dp"></ImageView><ImageView
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:src="@drawable/o"
+          android:layout_marginLeft="25dp"></ImageView>
+   </LinearLayout>
+   <View
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:layout_weight="2"></View>
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="25dp"
+       android:layout_marginRight="10dp"
+       android:id="@+id/radioGroup"
+       android:layout_weight="2">
+      <RadioButton
+          android:id="@+id/players"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="50dp"
+          android:freezesText="true"
+          android:text="2 Player"
+          android:textColor="#00bfff"
+          android:textSize="30dp"
+          android:textStyle="bold"></RadioButton>
+
+      <RadioButton
+          android:id="@+id/computer"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="50dp"
+          android:layout_marginTop="10dp"
+          android:freezesText="true"
+          android:text="Play with computer"
+          android:textColor="#FF0000"
+          android:textSize="30dp"
+          android:textStyle="bold"></RadioButton>
+   </RadioGroup>
+
+   <View
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:layout_weight="1"></View>
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/start"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="START"
+       android:textColor="#000"
+       android:textSize="35dp"
+       android:fontFamily="@font/font"
+       android:background="@drawable/border"
+       android:textStyle="bold"
+       android:layout_marginLeft="100dp"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+</LinearLayout>
